@@ -5,7 +5,7 @@
   text-align: center;
 }
 .padding {
-  padding: 50px 50px 20px 50px;
+  padding: 4vw 4vw 1.6vw 4vw;
 }
 
 .background-primary {
@@ -31,4 +31,7 @@
 }
 .border-secondary {
   border: 10px solid greenyellow;
+}
+img {
+  max-width: 100%;
 }
