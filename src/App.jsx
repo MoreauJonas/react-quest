@@ -41,11 +41,7 @@ function App() {
   return (
     <>
       <div className="background-primary radius-primary padding border-primary flex">
-        {pokemonList
-          .filter((pokemon, index) => index === pokemonIndex)
-          .map((pokemon, index) => (
-            <PokemonCard key={index} pokemon={pokemon} />
-          ))}
+        <PokemonCard pokemon={pokemonList[pokemonIndex]} />
       </div>
       <div className="btn">
         {pokemonIndex > 0 && (
