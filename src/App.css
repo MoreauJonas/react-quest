@@ -1,6 +1,10 @@
+body {
+  max-width: 100%;
+  justify-content: center;
+  align-items: center;
+}
 #root {
   max-width: 1280px;
-  margin: 0 auto;
   padding: 2rem;
   text-align: center;
 }
@@ -21,7 +25,7 @@
 }
 
 .poke-name {
-  font-size: 50px;
+  font-size: 3em;
   text-transform: uppercase;
   font-weight: bold;
   color: green;
@@ -33,5 +37,35 @@
   border: 10px solid greenyellow;
 }
 img {
+  max-width: 95%;
+  object-fit: contain;
+}
+.btn {
+  margin-top: 20px;
+  max-width: 100%;
+}
+.btn button {
+  margin: 0 10px;
+}
+.decre {
+  background-color: aquamarine;
+}
+.incre {
+  background-color: aqua;
+}
+.decre:hover,
+.incre:hover {
+  background-color: beige;
+}
+
+figure {
+  width: 65%;
+  max-width: 100%;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+}
+.flex {
+  display: flex;
+  justify-content: center;
   max-width: 100%;
 }
