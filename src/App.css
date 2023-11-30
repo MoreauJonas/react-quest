@@ -41,8 +41,11 @@ img {
   object-fit: contain;
 }
 .btn {
+  display: flex;
   margin: 20px 0;
   max-width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .btn button {
   margin: 0 10px;
