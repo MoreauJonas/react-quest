@@ -38,7 +38,7 @@ function App() {
       <NavBar
         pokemonIndex={pokemonIndex}
         setPokemonIndex={setPokemonIndex}
-        lenght={pokemonList.length}
+        length={pokemonList.length}
       />
       <div className="background-primary radius-primary padding border-primary flex">
         <PokemonCard pokemon={pokemonList[pokemonIndex]} />

@@ -2,11 +2,11 @@ import PropTypes from "prop-types";
 
 NavBar.propTypes = {
   pokemonIndex: PropTypes.number.isRequired,
-  setPokemonIndex: PropTypes.number.isRequired,
-  lenght: PropTypes.number.isRequired,
+  setPokemonIndex: PropTypes.func.isRequired,
+  length: PropTypes.number,
 };
 
-function NavBar({ pokemonIndex, setPokemonIndex, lenght }) {
+function NavBar({ pokemonIndex, setPokemonIndex, length }) {
   const handleDecrement = () => {
     setPokemonIndex(pokemonIndex - 1);
   };
@@ -21,7 +21,7 @@ function NavBar({ pokemonIndex, setPokemonIndex, lenght }) {
           Précedent
         </button>
       )}
-      {pokemonIndex < lenght - 1 && (
+      {pokemonIndex < length - 1 && (
         <button onClick={handleIncrement} className="incre">
           Suivant
         </button>
